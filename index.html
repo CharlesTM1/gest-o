@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão de Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Eventos</h1>
+    </header>
+
+    <main>
+        <section id="cadastro-evento">
+            <h2>Adicionar Novo Evento</h2>
+            <form id="form-evento">
+                <div>
+                    <label for="nome">Nome do Evento:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                <div>
+                    <label for="local">Local:</label>
+                    <input type="text" id="local" name="local" required>
+                </div>
+                <button type="submit">Adicionar Evento</button>
+            </form>
+        </section>
+
+        <section id="lista-eventos">
+            <h2>Próximos Eventos</h2>
+            <ul id="eventos">
+                <li>Evento 1 - 10/05/2025 - Local A</li>
+                <li>Evento 2 - 15/05/2025 - Local B</li>
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Gestão de Eventos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
